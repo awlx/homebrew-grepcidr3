@@ -6,6 +6,7 @@ class Grepcidr3 < Formula
   sha256 "0347b39a07a205b82b265dd70a0fab352ba05e74c0276875941aad3cc83402de"
 
   def install
-    system "./configure", *std_configure_args, "--disable-silent-rules"
+    system "make"
+    bin.install "grepcidr"
   end
 end
